@@ -1,11 +1,5 @@
 @media screen and (max-width: 640px) {
-
-    /*
-    ==============================
-    BASIC SETUP
-    ==============================
-    */
-
+    /* BASIC BODY */
     #header-container,
     #footer-container,
     #content-container {
@@ -13,39 +7,23 @@
         max-width: 620px;
     }
 
-    /*
-    ==============================
-    HEADER + TOP NAV
-    ==============================
-    */
-
+    /* HEADER + NAVBAR */
     #header-container {
         display: flex;
         flex-direction: column;
     }
-
     header h1 {
         flex-basis: 1;
         width: 100%;
         text-align: center;
     }
 
-    /*
-    ==============================
-    FOOTER
-    ==============================
-    */
-
+    /* FOOTER */
     #footer-container {
         padding: 0 30px;
     }
 
-    /*
-    ==============================
-    ABOUT ME PAGE
-    ==============================
-    */
-
+    /* ABOUT ME PAGE */
     .profpic {
         float: none; 
         margin-bottom: 30px;
@@ -55,17 +33,11 @@
         height: 480px;
     }
 
-    /*
-    ==============================
-    PORTFOLIO
-    ==============================
-    */
-
+    /* PORTFOLIO PAGE */
     .portfolio-grid {
         display: grid;
         height: 100%;
         grid-template-columns: 1fr;
         grid-gap: 30px;
     }
-   
 }

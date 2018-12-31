@@ -1,29 +1,17 @@
-@media screen and (max-width: 768px) {
-    
-    /*
-    ==============================
-    BASIC SETUP
-    ==============================
-    */
-
+@media screen and (max-width: 768px) { 
+    /* BASIC BODY */
     #header-container,
     #footer-container,
     #content-container {
         width: 100%;
         max-width: 748px;
     }
-
     h1 {
         font-size: 2.05em;
         letter-spacing: -1.5px;
     }
 
-    /*
-    ==============================
-    HEADER + TOP NAV
-    ==============================
-    */
-
+    /* HEADER + NAVBAR */
     header h1 {
         flex-basis: auto;
         padding: 22px 30px;
@@ -31,14 +19,8 @@
         color: #fff;
     }
 
-    /*
-    ==============================
-    FOOTER
-    ==============================
-    */
-
+    /* FOOTER */
     #footer-container {
         padding: 0 30px;
     }
-
 }
