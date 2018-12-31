@@ -182,20 +182,25 @@ img.img-fluid {
 figure {
     max-height: 100%;
     max-width: 100%;
+    border: 2px solid rgba(75,0,130,.8);
     z-index: 1;
 }
 figure img {
-    transition: all .75s;
     max-height: 100%;
     max-width: 100%;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .8s ease-in-out;
+    
 }
 figure img:hover {
-    /* filter: grayscale(0); */
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
 }
 figcaption {
     /* background: #4B0082; */
     background: rgba(75,0,130,.8);
-    box-shadow: 0 5px 8px rgba(80,80,80,.5);
     text-align: center;
     position: relative;
     z-index: 2;
@@ -205,17 +210,18 @@ figcaption {
     width: 100%;
 }
 figcaption a {
-    color: #fff;
+    text-decoration: none;
+    color: #fff !important;
     font-family: 'Arsenal', sans-serif;
     font-size: 25px;
-    text-decoration: none;
-    transition: all .75s;
 }
 figcaption a:hover {
     text-decoration: none;
-    transition: .5s ease;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
     text-shadow: 0 0 20px #fff, 0 0 30px #4B0082, 0 0 40px #4B0082, 0 0 50px #4B0082, 0 0 60px #4B0082, 0 0 70px #4B0082, 0 0 80px #4B0082;
-    border-bottom: none;
+    transition: 5s;
 }
 
 
