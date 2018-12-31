@@ -1,0 +1,252 @@
+/* BASIC BODY */
+body {
+    background-image: url("../images/black-wood.jpg");
+    /* font-family: 'Fahkwang', sans-serif; */
+}
+/* h1, h2, h3, {
+    font-family: 'Arsenal', sans-serif;
+    color: black;
+} */
+p {
+    line-height: 1.8em;
+}
+p:nth-child(1n+2) {
+    margin-bottom: 15px;
+}
+.main-wrap {
+    min-height: calc(100vh - 92px);
+}
+::selection {
+    background: #4B0082;
+    color: #fff;
+}
+
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #ccc; 
+}
+::-webkit-scrollbar-thumb {
+    background: #4B0082; 
+}
+
+
+/* HEADER */
+header {
+    background: transparent;
+    box-shadow: 0 5px 10px rgba(56,56,56,1);
+    margin-bottom: 13px;
+}
+#header-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    flex-basis: auto;
+    height: 100%;
+    padding: 14px 30px;
+    background: transparent;
+}
+header h1 a {
+    color: #fff !important;
+    font-family: 'Arsenal', sans-serif;
+    font-size: 380%;
+    text-shadow: 0 0 20px #fff, 0 0 30px #4B0082, 0 0 40px #4B0082, 0 0 50px #4B0082, 0 0 60px #4B0082, 0 0 70px #4B0082, 0 0 80px #4B0082;
+}
+header h1 a:hover {
+    text-decoration: none;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    text-shadow: 0 0 20px #fff, 0 0 30px #4B0082, 0 0 40px #4B0082, 0 0 50px #4B0082, 0 0 60px #4B0082, 0 0 70px #4B0082, 0 0 80px #4B0082;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4B0082, 0 0 40px #4B0082, 0 0 50px #4B0082, 0 0 60px #4B0082, 0 0 70px #4B0082;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #4B0082, 0 0 40px #4B0082, 0 0 50px #4B0082, 0 0 60px #4B0082, 0 0 70px #4B0082, 0 0 80px #4B0082;
+    }
+  }
+
+
+/* HEADER + NAVBAR */
+header nav {
+    flex: 0.5;
+}
+header nav ul {
+    display: flex;
+}
+header nav li {
+    flex: 1;
+}
+
+/* NAVBAR */
+nav a {
+    /* text-decoration: none; */
+    padding: 30px 15px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 160%;
+    font-weight: 500;
+    color: #fff;
+    transition: all .75s;
+    font-family: 'Arsenal', sans-serif;
+}
+nav a:hover {
+    text-decoration: none;
+    /* background: #4B0082; */
+    color: #fff;
+    /* opacity: 0.7; */
+    transition: .5s ease;
+    text-shadow: 0 0 20px #fff, 0 0 30px #4B0082, 0 0 40px #4B0082, 0 0 50px #4B0082, 0 0 60px #4B0082, 0 0 70px #4B0082, 0 0 80px #4B0082;
+}
+
+
+/* CONTENT SECTION */
+section {
+    margin-top: 30px;
+    font-family: 'Arsenal', sans-serif;
+}
+#content-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    background: rgba(255,255,255,.7);
+    /* border: 5px outset rgba(75,0,130,.8); */
+    border: 5px solid rgba(75,0,130,.8);
+    padding: 30px;
+    overflow: auto;
+    clear: both;
+}
+section h1 {
+    font-size: 250%;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(75,0,130,.8);
+    margin-bottom: 30px;
+}
+section p {
+    font-size: 23px;
+    color: black;
+}
+
+
+/* FOOTER */
+footer {
+    background: transparent;
+    color: #ccc;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    box-shadow: 0 -5px 10px rgba(56,56,56,1);
+    padding: 30px 0;
+    margin-top: 30px;
+}
+#footer-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+span.sans {
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+
+/* ABOUT ME PAGE */
+img.img-fluid {
+    float: left; 
+    margin-right: 30px;
+}
+
+
+/* PORTFOLIO PAGE */
+.portfolio-grid {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(2, 285px);
+    grid-template-columns: repeat(3, 285px);
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-gap: 20px;
+}
+figure {
+    max-height: 100%;
+    max-width: 100%;
+    z-index: 1;
+}
+figure img {
+    transition: all .75s;
+    max-height: 100%;
+    max-width: 100%;
+}
+figure img:hover {
+    /* filter: grayscale(0); */
+}
+figcaption {
+    /* background: #4B0082; */
+    background: rgba(75,0,130,.8);
+    box-shadow: 0 5px 8px rgba(80,80,80,.5);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-top: -75px;
+    margin-bottom: 26px;
+    padding: 15px 0;
+    width: 100%;
+}
+figcaption a {
+    color: #fff;
+    font-family: 'Arsenal', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    transition: all .75s;
+}
+figcaption a:hover {
+    text-decoration: none;
+    transition: .5s ease;
+    text-shadow: 0 0 20px #fff, 0 0 30px #4B0082, 0 0 40px #4B0082, 0 0 50px #4B0082, 0 0 60px #4B0082, 0 0 70px #4B0082, 0 0 80px #4B0082;
+    border-bottom: none;
+}
+
+
+/* CONTACT PAGE */
+form input, textarea {
+    width: 100%;
+    padding: 12px 6px;
+    margin: 5px 0;
+    font-family: sans-serif;
+}
+.btn-container {
+    margin-top: 8px;
+}
+button {
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 2px 8px rgba(80,80,80,.5);
+    padding: 6px 12px;
+}
+button:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+.btn-primary {
+    background: #4B0082;
+    color: #fff;
+    border: 2px solid #4B0082;
+}
+.btn-secondary {
+    background: #fff;
+    color: #4B0082;
+    border: 2px solid #4B0082;
+}
