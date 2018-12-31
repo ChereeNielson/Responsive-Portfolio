@@ -1,12 +1,7 @@
 /* BASIC BODY */
 body {
     background-image: url("../images/black-wood.jpg");
-    /* font-family: 'Fahkwang', sans-serif; */
 }
-/* h1, h2, h3, {
-    font-family: 'Arsenal', sans-serif;
-    color: black;
-} */
 p {
     line-height: 1.8em;
 }
@@ -122,7 +117,6 @@ section {
     max-width: 960px;
     margin: 0 auto;
     background: rgba(255,255,255,.7);
-    /* border: 5px outset rgba(75,0,130,.8); */
     border: 5px solid rgba(75,0,130,.8);
     padding: 30px;
     overflow: auto;
@@ -230,13 +224,14 @@ form input, textarea {
     width: 100%;
     padding: 12px 6px;
     margin: 5px 0;
-    font-family: sans-serif;
+    font-family: 'Arsenal', sans-serif;
 }
 .btn-container {
     margin-top: 8px;
 }
 button {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Arsenal', sans-serif;
+    font-size: 20px;
     border-radius: 5px;
     border: 0;
     box-shadow: 0 2px 8px rgba(80,80,80,.5);
@@ -247,12 +242,12 @@ button:hover {
     cursor: pointer;
 }
 .btn-primary {
-    background: #4B0082;
-    color: #fff;
+    background: rgba(75,0,130,.8);
+    color: #fff !important;
     border: 2px solid #4B0082;
 }
 .btn-secondary {
     background: #fff;
-    color: #4B0082;
+    color: black;
     border: 2px solid #4B0082;
 }
