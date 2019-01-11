@@ -19,14 +19,15 @@ p:nth-child(1n+2) {
 
 /* SCROLL BAR */
 ::-webkit-scrollbar {
-    width: 8px;
+    display: none;
+    /* width: 8px; */
 }
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
     background: #ccc; 
 }
 ::-webkit-scrollbar-thumb {
     background: #4B0082; 
-}
+} */
 
 
 /* HEADER */
